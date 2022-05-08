@@ -1,0 +1,148 @@
+:root {
+  --color-background-main: #16161c;
+  /*Main Background*/
+  --color-theme-main: #008770;
+  /*Color Accent*/
+  --color-theme-second: #4ec1f7;
+  /*Color Accent*/
+  --color-theme-third: #ffd759;
+  --color-text-main: white;
+  --color-text-second: #606060;
+  --color-border-light: #7a7a7a1c;
+  --space-small: 4px;
+  --space-medium: 8px;
+  --space-large: 16px;
+  --space-larger: 24px;
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 12px;
+  --size-topbar: 70px;
+  --shadow-small: rgba(0, 0, 0, 0.56) 0px 6px 24px 4px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@font-face {
+  font-family: "Frankfurter";
+  src: url("../public/fonts/FrankfurterPlain.otf");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-background-main);
+  color: var(--color-text-main);
+  background: radial-gradient(
+    at 50% 20%,
+    #12282B 0%,
+    var(--color-background-main) 100%
+  );
+  overflow: hidden;
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#16161C", endColorstr="#008770", GradientType=1);
+}
+
+input,
+select,
+textarea,
+button,
+.panel,
+.panel-shadow {
+  outline: none;
+  font-family: 'Share Tech Mono' !important;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-medium);
+  background-color: transparent;
+  backdrop-filter: blur(12px) grayscale(60%);
+  padding: var(--space-medium);
+  margin-inline: var(--space-small);
+  width: min-content;
+  color: var(--color-text-main);
+  backdrop-filter: blur(4px);
+}
+
+textarea,
+.panel-shadow {
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+button {
+  font-family: 'Share Tech Mono' !important;
+  padding: 0.75em 2em;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 7.5px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  color: white;
+  background-color: var(--color-theme-main);
+  backdrop-filter: brightness(120%);
+}
+
+button:hover {
+  color: white;
+  transform: translateY(-1px)
+}
+
+button:active {
+  transform: translateY(0px)
+}
+
+h1 {
+  font-family: 'Share Tech Mono';
+  font-size: 42pt;
+  margin-block-start: 1.5em;
+}
+
+h2 {
+  font-family: 'Share Tech Mono';
+  font-size: 24pt;
+}
+
+h3 {
+  font-family: 'Share Tech Mono';
+  font-weight: 300;
+}
+
+
+textarea {
+  resize: vertical;
+}
+
+option {
+  background-color: var(--color-background-main);
+  backdrop-filter: blur(12px) grayscale(60%);
+}
+
+select *::selection {
+  background-color: blue;
+}
+
+input::placeholder {
+  color: var(--color-text-main);
+}
+
+a {
+  color: var(--color-theme-main);
+}
+
+footer {
+  border-top: 1px solid var(--color-border-light);
+  padding-top: var(--space-larger);
+  padding-bottom: var(--space-larger);
+  margin-top: var(--space-larger);
+  color: var(--color-text-second);
+}

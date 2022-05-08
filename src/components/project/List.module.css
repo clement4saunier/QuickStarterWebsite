@@ -1,0 +1,8 @@
+.list {
+    margin-top: var(--space-medium);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, auto);
+    width: 100%;
+    gap: var(--space-larger);
+    position: relative;
+}

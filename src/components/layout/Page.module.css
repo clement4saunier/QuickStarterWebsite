@@ -1,0 +1,19 @@
+.page {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+
+.page > * {
+  width: min(100% - var(--space-medium) * 2, 1000px);
+  margin-inline: auto;
+}
+
+.page > .content {
+  padding-top: var(--size-topbar);
+  min-height: 100%;
+  padding-bottom: var(--space-larger);
+}
+
+*::-webkit-scrollbar {
+  width: 0em;
+}
